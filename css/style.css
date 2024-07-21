@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 100px;
+  background: url(../images/header.jpg) fixed;
+}
+
+/* Header and footer */
+header,
+footer {
+  border-style: groove;
+  background-color: #FFFFFF;
+}
+
+header{
+  border-radius: 22px 22px 0 0;
+}
+
+footer{
+  border-radius: 0 0 22px 22px;
+}
+/* ---------------------------- */
+
+/* Main style */
+main {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-left-style: groove;
+  border-right-style: groove;
+  background: url(../images/flagUruguay.png) center center no-repeat fixed;
+  background-size: cover;
+}
+
+p, li{
+  text-align: left;
+  padding: 5px;
+}
+
+h1, h2 {
+  color: black;
+  background: url(../images/header.jpg) round;
+  border-radius: 22px;
+}
+/* ---------------------------- */
+
+
+/* Img style */
+.imgVertical, .imgHorizontal, .imgPano {
+  border-style: groove;
+  border-radius: 22px;
+  display: inline-block;
+}
+
+.imgHorizontal{
+  height: 300px;
+  width: 400px;
+}
+
+.imgVertical{
+  height: 500px;
+  width: 400px;
+}
+
+.imgPano{
+  width: 100%;
+}
+/* ---------------------------- */
+
+/* Table style */
+table{
+  width: 100%;
+}
+
+td{
+  padding: 5px;
+  border-radius: 22px;
+}
+
+.tdImg{
+  border: groove 22px;
+}
+/* ---------------------------- */
+
+/* Button style */
+.button{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 22px;
+}
+
+.button:hover{
+  background-color: #0038A8;
+  color: #FFFFFF;
+}
+/* ---------------------------- */
+
+/* Contact Form style */
+ul{
+  list-style-type: none;
+}
+
+input[type=text], input[type=email], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+}
+/* ---------------------------- */
+
+/* Responsive style */
+@media all and (max-width:975px){
+
+  table, td, .info, .imgTable{
+      width:100%;
+  }
+
+  html{
+    width: fit-content;
+  }
+
+  td{
+      display:block;
+  }
+}
+/* ---------------------------- */
+
+/* Menu style */
+.menu {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  font-family: cursive;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.menu:hover {
+  pointer-events: all;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+}
+
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.spacer {
+  display: inline-flex;
+  width: 80px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.spacer:before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #000000;
+  height: 1px;
+  width: 0%;
+  transition: width 0.25s ease;
+  transition-delay: 0.7s;
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+  color: #000000;
+}
+
+span {
+  transition: color 0.5s ease;
+}
+
+.item:hover span {
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.menu:hover .spacer:before {
+  width: 100%;
+  transition-delay: 0s;
+}
+
+.menu:hover .item {
+  opacity: 1;
+  bottom: 0px;
+}
+
+.item:nth-child(1) {
+  transition-delay: 0.45s;
+}
+
+.item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+
+.item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+.item:nth-child(6) {
+  transition-delay: 0.2s;
+}
+
+.item:nth-child(7) {
+  transition-delay: 0.15s;
+}
+
+.item:nth-child(8) {
+  transition-delay: 0.1s;
+}
+
+.item:nth-child(9) {
+  transition-delay: 0.05s;
+}
+
+.item:nth-child(10) {
+  transition-delay: 0s;
+}
+
+.menu:hover .item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu:hover .item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.menu:hover .item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+
+.menu:hover .item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.menu:hover .item:nth-child(5) {
+  transition-delay: 0.45s;
+}
+
+.menu:hover .item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+.menu:hover .item:nth-child(7) {
+  transition-delay: 0.55s;
+}
+
+.menu:hover .item:nth-child(8) {
+  transition-delay: 0.6s;
+}
+
+.menu:hover .item:nth-child(9) {
+  transition-delay: 0.65s;
+}
+
+.menu:hover .item:nth-child(10) {
+  transition-delay: 0.7s;
+}
+/* ---------------------------- */
